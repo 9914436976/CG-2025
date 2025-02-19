@@ -74,6 +74,6 @@ app.post("/compile", async function (req, res) {
     }
 });
 
-app.listen(8000, function () {
+app.listen(8000,"0.0.0.0", function () {
     console.log("Server running on http://localhost:8000");
 });
