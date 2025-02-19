@@ -76,4 +76,4 @@ app.post("/compile", async function (req, res) {
     }
 });
 
-app.listen(8000, "0.0.0.0")
+module.exports = app;
