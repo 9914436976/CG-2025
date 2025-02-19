@@ -104,7 +104,7 @@
         var lang = document.getElementById("languageSelect").value;
         document.getElementById("inputOutputField").value = "Running...";
 
-        fetch("http://localhost:8000/compile", {
+        fetch("/compile", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ code: code, input: input, lang: lang }),

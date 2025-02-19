@@ -26,8 +26,10 @@ const JUDGE0_LANGUAGES = {
     python: 71 // Python (3.8.1)
 };
 
+console.log(__dirname)
+
 app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/frontend/index.html");
 });
 
 app.post("/compile", async function (req, res) {
@@ -74,6 +76,4 @@ app.post("/compile", async function (req, res) {
     }
 });
 
-app.listen(8000,"0.0.0.0", function () {
-    console.log("Server running on http://localhost:8000");
-});
+module.exports = app
